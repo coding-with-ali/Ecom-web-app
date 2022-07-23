@@ -8,12 +8,13 @@ import {saveShippingAddress} from '../actions/cartActions'
 import CheckOutSteps from '../components/CheckOutSteps';
 
 
+
 function ShippingScreen() {
+
   const cart = useSelector(state => state.cart)
   const {shippingAddress}=cart 
 
   const dispatch = useDispatch()
-
   const history = useNavigate();
   const [address,setAddress] = useState(shippingAddress.address)
   const [city,setCity] = useState(shippingAddress.city)
