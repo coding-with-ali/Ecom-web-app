@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import Container from 'react-bootstrap/Container'
 import Footer from './components/Footer';
 import Header from './components/Header';
